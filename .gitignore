@@ -32,3 +32,4 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+distribute-0.6.36.tar.gz

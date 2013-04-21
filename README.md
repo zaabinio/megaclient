@@ -1,6 +1,6 @@
-# mega-client
+# megaclient
 
-mega-client is a sysadmin friendly command line interface to mega.co.nz api.
+megaclient is a sysadmin friendly command line interface to mega.co.nz api.
 It's goal is to provide simple interface for other programs to run against. It
 is a simple wrapper around [mega.py](https://github.com/richardasaurus/mega.py)
 library.

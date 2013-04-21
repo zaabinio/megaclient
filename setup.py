@@ -1,16 +1,25 @@
 #!/usr/bin/env python3
-from distutils.core import setup
+from distribute_setup import use_setuptools
+use_setuptools()
+
+from setuptools import setup, find_packages
 
 setup(
-    name="mega-client",
+    name="megaclient",
     version="0.1",
     author='Tomáš Heřman',
     author_email='tomas.herman@gmail.com',
-    packages=["mega-client"],
-    url='http://www.github.com/tomasherman/mega-client',
+    packages=["megaclient"],
+    url='http://www.github.com/tomasherman/megaclient',
     license='LICENSE.txt',
     long_description=open('README.md').read(),
     requires = [
+        'distribute',
         "mega.py (>= 0.9.5)"
-    ]
+    ],
+    entry_points = {
+        'console_scripts' : [
+            ['megaclient = megaclient.megaclient:main']
+        ]
+    }
 )
