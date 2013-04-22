@@ -12,26 +12,29 @@ Sample usage:
 ### Help
 
 ```
-mega-client -h
+megaclient -h
 ```
 
 ### Upload files
+
 ```
-mega-client --action 'upload' --login test@example.com --password secret file1 file2 ...
+megaclient --action 'upload' --login test@example.com --password secret file1 file2 ...
 ```
 
 ### Download files
 
 ```
-mega-client --action 'download' --login test@example.com --password secret file1 file2 ...
+megaclient --action 'download' --login test@example.com --password secret file1 file2 ...
 ```
 
 ### Get list of files
+
 ```
-mega-client --action 'ls' --login test@example.com --password secret
+megaclient --action 'ls' --login test@example.com --password secret
 ```
 
 ### Remove files
+
 ```
-mega-client --action 'rm' --login test@example.com --password secret file1 file2
+megaclient --action 'rm' --login test@example.com --password secret file1 file2
 ```
